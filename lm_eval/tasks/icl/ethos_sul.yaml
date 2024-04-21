@@ -1,0 +1,15 @@
+dataset_path: ethos
+dataset_name: binary
+output_type: multiple_choice
+training_split: train
+validation_split: train
+doc_to_target: label
+fewshot_delimiter: "\n"
+metric_list:
+  - metric: acc
+metadata:
+  version: 1.0
+doc_to_text: "Input: {{text}}\nOutput:"
+group: icl_sul
+task: ethos_sul
+doc_to_choice: ["Foo", "Bar"]

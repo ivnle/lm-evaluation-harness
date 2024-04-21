@@ -1,0 +1,15 @@
+dataset_path: glue
+dataset_name: rte
+output_type: multiple_choice
+training_split: train
+validation_split: validation
+doc_to_target: label
+fewshot_delimiter: "\n"
+metric_list:
+  - metric: acc
+metadata:
+  version: 1.0
+doc_to_text: "Input: {{sentence1}}\n{{sentence2}}\nOutput:"
+group: icl_flipped
+task: rte_flipped
+doc_to_choice: ["Does not entail", "Entails"]

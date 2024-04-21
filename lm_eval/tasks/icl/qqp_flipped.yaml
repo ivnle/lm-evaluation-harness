@@ -1,0 +1,15 @@
+group: icl_flipped
+task: qqp_flipped
+doc_to_choice: ["Duplicate", "Not a duplicate"]
+dataset_path: glue
+dataset_name: qqp
+output_type: multiple_choice
+training_split: train
+validation_split: validation
+doc_to_text: "Input: {{question1}}\n{{question2}}\nOutput:"
+doc_to_target: label
+fewshot_delimiter: "\n"
+metric_list:
+  - metric: acc
+metadata:
+  version: 1.0
