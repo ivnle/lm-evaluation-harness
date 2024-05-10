@@ -1,6 +1,7 @@
 dataset_path: ivnle/noun_or_verb
 output_type: multiple_choice
 training_split: train
+validation_split: train
 doc_to_target: label
 fewshot_delimiter: "\n"
 metric_list:
@@ -8,6 +9,6 @@ metric_list:
 metadata:
   version: 1.0
 doc_to_text: "Input: {{word}}\nOutput:"
-group: icl_standard
+group: icl_standard_simple
 task: nounverb_standard
 doc_to_choice: ["Noun", "Verb"]

@@ -1,0 +1,14 @@
+dataset_path: ivnle/prime_or_composite
+output_type: multiple_choice
+training_split: train
+validation_split: train
+doc_to_target: label
+fewshot_delimiter: "\n"
+metric_list:
+  - metric: acc
+metadata:
+  version: 1.0
+doc_to_text: "Input: {{number}}\nOutput:"
+group: icl_flipped_simple
+task: primecomposite_flipped
+doc_to_choice: ["Prime", "Composite"]
